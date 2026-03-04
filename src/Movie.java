@@ -6,6 +6,7 @@ public class Movie {
     int totalRatings;
     int durationInMinutes;
 
+    // method creation
     void displayTechnicalSheet(){
         System.out.println(name);
         System.out.println(yearOfRelease);
