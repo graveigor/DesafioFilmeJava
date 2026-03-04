@@ -2,7 +2,7 @@ public class Movie {
     String name;
     int yearOfRelease;
     boolean includedInThePlan;
-    double rating;
+    double sumOfRatings;
     int totalRatings;
     int durationInMinutes;
 
@@ -12,4 +12,12 @@ public class Movie {
         System.out.println(yearOfRelease);
     }
 
+    void assessment (double note){
+        sumOfRatings += note;
+        totalRatings ++;
+    }
+
+    double returnMedia(){
+        return sumOfRatings/totalRatings;
+    }
 }
